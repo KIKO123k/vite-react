@@ -1,33 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { 
-  Play, 
-  Download, 
-  Camera, 
-  Mail, 
-  Calculator, 
-  FileSpreadsheet, 
-  Code2, 
-  AlertCircle, 
-  CheckCircle2, 
-  FileText, 
-  Upload, 
-  Loader2, 
-  Sparkles,
-  ImageIcon,
-  HelpCircle,
-  ChevronDown,
-  ChevronUp,
-  FileDown,
-  Copy,
-  Check,
-  Cpu,
-  Terminal,
-  Smartphone,
-  Laptop,
-  RefreshCw,
-  Eye
+  Play, Download, Camera, Mail, Calculator, 
+  FileSpreadsheet, Code2, AlertCircle, CheckCircle2, 
+  Upload, Loader2, Sparkles, HelpCircle, ChevronDown, 
+  ChevronUp, FileDown, Copy, Check, Terminal, 
+  Smartphone 
 } from 'lucide-react';
-
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithCustomToken, signInAnonymously, onAuthStateChanged } from 'firebase/auth';
 import { getFirestore, doc, setDoc, onSnapshot, getDoc } from 'firebase/firestore';
