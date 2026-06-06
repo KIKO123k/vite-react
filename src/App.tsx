@@ -38,7 +38,7 @@ const app = firebaseConfig ? initializeApp(firebaseConfig) : null;
 const auth = app ? getAuth(app) : null;
 const db = app ? getFirestore(app) : null;
 
-export default function OptimizationAgent() {
+export default function App() {
   const [scriptsLoaded, setScriptsLoaded] = useState(false);
   const reportRef = useRef(null);
   const cameraInputRef = useRef(null);
